@@ -1,0 +1,45 @@
+/* Styling for the div containing the Add New Payment link */
+.add-payment-link {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Styling for the Add New Payment link */
+.add-payment-link a {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.add-payment-link a:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Active state for routerLink */
+.add-payment-link a.active {
+  background-color: #1976d2; /* Change color when active */
+  color: white;
+}
+
+/* Focus state for accessibility */
+.add-payment-link a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(41, 98, 255, 0.5); /* Blue focus ring */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .add-payment-link a {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+}
